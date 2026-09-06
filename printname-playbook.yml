@@ -1,0 +1,14 @@
+---
+- name: Print hello messages
+  hosts: all
+
+  tasks:
+    - name: Print hello world
+      ansible.builtin.debug:
+        msg: "Hello World"
+
+    - name: Print hello Soumyadeep
+      ansible.builtin.shell: echo "Hello from Soumyadeep"
+
+    - name: Print hello Ansible
+      ansible.builtin.command: echo "Hello Ansible from Soumya"
